@@ -178,7 +178,8 @@ def main(_argv):
         generator_g_optimizer.learning_rate = lr
         generator_f_optimizer.learning_rate = lr
         discriminator_x_optimizer.learning_rate = lr
-        discriminator_y_optimizer.learning_rate = lr		
+        discriminator_y_optimizer.learning_rate = lr
+        ckpt_save_path = ckpt_manager.save()	
 if __name__ == '__main__':
     try:
         app.run(main)
