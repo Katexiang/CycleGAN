@@ -29,7 +29,7 @@ flags.DEFINE_float('beta1', 0.5,
 flags.DEFINE_integer('ngf', 64,
                         'number of gen filters in first conv layer, default: 64')
 
-flags.DEFINE_float('weight_decay', 0, "The weight decay for ENet convolution layers.")
+flags.DEFINE_float('weight_decay', 0, "The weight decay for convolution layers.")
 
 
 #loss function
