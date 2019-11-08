@@ -4,7 +4,7 @@ tensorflow 2.0;
 This implementation of CycleGAN is a combination and upgrade version of [vanhuyz's tf1 version](https://github.com/vanhuyz/CycleGAN-TensorFlow) and tf2's official implementation.
 And this project can be utilized on Windows, because many other's implementation needs a pakage of Addons for instance normalization.
 
-I have realized the instance normalization.
+I have implemented the instance normalization.
 
 The code is quite easy to use. The only thing you have to change is the data.py to adapt to your own dataset.
 
