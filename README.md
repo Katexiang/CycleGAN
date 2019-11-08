@@ -8,7 +8,7 @@ I have realized the instance normalization.
 
 The code is quite easy to use. The only thing you have to change is the data.py to adapt to your own dataset.
 
-In addition, I believe this code can help you learn the usage of tensorflow 2! I am a cordial tf-boy!!!
+In addition, I believe this code can help you learn the usage of tensorflow 2! I am a cordial tf-boy!!! No hesitate to ask me any problem about TF2!!!
 ## Main Dependencies
 ```
 tensorflow 2.0
