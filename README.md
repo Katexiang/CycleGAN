@@ -17,3 +17,4 @@ Python 3.6.5
 ```
 ## Note
 In the future, I will update the demo code for wgan. And I will show the result of the demo. This cyclegan is leverged for generating foggy cityscapes for my research work.
+![image](https://github.com/Katexiang/CycleGAN/blob/master/sample.png)
