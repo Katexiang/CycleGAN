@@ -16,5 +16,5 @@ Open CV
 Python 3.6.5
 ```
 ## Note
-In the future, I will update the demo code for wgan. And I will show the result of the demo. This cyclegan is leverged for generating foggy cityscapes for my research work.
+In the future, I will update the demo code for wgan. And I will show the result of the demo. This cyclegan is leverged for generating foggy cityscapes for my research work. And train.py has a few problems, I will rewrite it soon and upload it.
 ![image](https://github.com/Katexiang/CycleGAN/blob/master/sample.png)
