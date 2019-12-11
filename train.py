@@ -118,7 +118,7 @@ def main(_argv):
 	
     source_data=data.source_data(batch_size)
     target_data=data.target_data(batch_size)
-
+    target_it=iter(target_data.repeat(-1))
     train_loss_G = tf.keras.metrics.Mean('train_loss_G', dtype=tf.float32)
     train_loss_F = tf.keras.metrics.Mean('train_loss_F', dtype=tf.float32)
     train_loss_DX = tf.keras.metrics.Mean('train_loss_DX', dtype=tf.float32)	
@@ -144,7 +144,7 @@ def main(_argv):
     for ep in range(start,epoch,1):
         print('Epoch:'+str(ep+1))	
         for step,  source in enumerate(source_data):
-            target = next(iter(target_data))		
+            target = next(target_it)		
             fake_y, cycled_x,fake_x,cycled_y,same_x,same_y, total_gen_g_loss,total_gen_f_loss,disc_x_loss,disc_y_loss,steps = train_step(G,F,D_Y,D_X,source,target,generator_g_optimizer,generator_f_optimizer,discriminator_x_optimizer,discriminator_y_optimizer,train_loss,lambda1,lambda2)
             print('Step: '+str(steps.numpy())+' , G loss: '+str(total_gen_g_loss.numpy())+' , F loss: '+str(total_gen_f_loss.numpy())+' , D_X loss: '+str(disc_x_loss.numpy())+' , D_Y loss: '+str(disc_y_loss.numpy()))
             if (steps.numpy()-1)%10==0:
